@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/navBar.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+            <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="navConatainer">
+        <div class="logo">
+          <a
+            href="index.html"
+            style="
+              text-decoration: none;
+              text-emphasis: none;
+              color: rgb(245, 245, 245);
+            "
+            >SalStocks</a
+          >
+        </div>
+		<nav>
+          <ul id="barContent">
+            <li id="homeSearchList">
+              <a id="homeSearchLink" href="index.html">Home/Search</a>
+            </li>
+            <li
+              id="loginSignUpList"
+            >
+              <a id="logInSignUpLink" href="login.html">Login/Sign Up</a>
+            </li>
+                        <li id="favoritesList" style="display: none;">
+              <a id="favoritesLink" href="favorites.html">Favorites</a>
+            </li>
+            <li id="portfolioList" style="display: none; border: 2px solid rgb(200, 200, 200);">
+              <a id="portfolioLink" href="#">Portfolio</a>
+            </li>
+            <li id="logOutList" style="display: none;">
+              <a id="logOutLink" href="javascript:logOut();">Log Out</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    
+    
+    
+      <div id = 'portfolioPage'>
+      	<h1>My Portfolio</h1>
+      	<h3 id = 'cashBalanceHead'>Cash Balance: <span id = 'cashBalance'></span></h3>
+      	<h3 id = 'accountValueHead'>Total Account Value: <span id = 'accountValue'></span></h3>
+      	
+      	
+      	
+      	<div id = 'allCompanies'>
+      	
+      	
+      	
+      	<div class='company' style = 'display: none;'>
+      	
+      	
+      	
+      	<div class='companyTitle'>
+      		<h2 id = 'ticker' class = 'tickerStyle'>AAPL</h2>
+      		<h3 id = 'companyName' class = 'companyNameStyle'>Apple Inc</h3>
+      	</div>
+      	
+      	<div class='companyTableWrapper'>
+      	
+      		<table class='companyTable'>
+      		
+      			<tr>
+      			<th><span class = 'left'>Quantity:</span></th>
+      			<th><span class = 'right'>2.00</span></th>
+      			<th><span class = 'left'>Change:</span></th>
+      			<th><span class='right'>0.24</span></th>
+      			</tr>
+      			
+      			
+      			<tr>
+      			<th><span class='left'>Avg. Cost / Share:</span></th>
+      			<th><span class='right'>123.10</span></th>
+      			<th><span class='left'>Current Price:</span></th>
+      			<th><span class='right'>123.24</span></th>
+      			</tr>
+      			
+      			
+      			<tr>
+      			<th><span class='left'>Total Cost:</span></th>
+      			<th><span class='right'>246.20</span></th>
+      			<th><span class='left'>Market Value:</span></th>
+      			<th><span class='right'>246.68</span></th>
+      			</tr>
+      			
+      			
+      		</table>
+      	
+      	</div>
+      	
+      	
+      	<div class = 'formWrapper'>
+      		<form id = 'aapl'  class='form' onsubmit='console.log(this.id); return false;'>
+      			<div class = 'quantityInput'>
+				Quantity: 
+				<input name='quantity' type='number'/>
+      			</div>
+      			
+    			<div class = 'radio'>
+      			<input type='radio' name ='buyOrSell' value='1' checked/>
+      			<label for='buy'>BUY</label>
+      			<input type ='radio' name ='buyOrSell' value='2'/>
+      			<label for='buy'>SELL</label>
+      			</div>
+      			
+      			<div class = 'buttonWrapper'>
+      		 	<input type="submit" value="Submit" style = "width:60px">
+      		 	</div>
+      		</form>
+      	</div>
+      	
+      	</div>
+      	
+      	
+      	
+      	
+      	
+      	</div>
+    
+         	<div class='company' style = 'display: none;'>
+      	
+      	
+      	
+      	<div class='companyTitle'>
+      		<h2 id = 'ticker' class = 'tickerStyle'>AAPL</h2>
+      		<h3 id = 'companyName' class = 'companyNameStyle'>Apple Inc</h3>
+      	</div>
+      	
+      	<div class='companyTableWrapper'>
+      	
+      		<table class='companyTable'>
+      		
+      			<tr>
+      			<th><span class = 'left'>Quantity:</span></th>
+      			<th><span class = 'right'>2.00</span></th>
+      			<th><span class = 'left'>Change:</span></th>
+      			<th><span class='right'>0.24</span></th>
+      			</tr>
+      			
+      			
+      			<tr>
+      			<th><span class='left'>Avg. Cost / Share:</span></th>
+      			<th><span class='right'>123.10</span></th>
+      			<th><span class='left'>Current Price:</span></th>
+      			<th><span class='right'>123.24</span></th>
+      			</tr>
+      			
+      			
+      			<tr>
+      			<th><span class='left'>Total Cost:</span></th>
+      			<th><span class='right'>246.20</span></th>
+      			<th><span class='left'>Market Value:</span></th>
+      			<th><span class='right'>246.68</span></th>
+      			</tr>
+      			
+      			
+      		</table>
+      	
+      	</div>
+      	
+      	
+      	<div class = 'formWrapper'>
+      		<form id = 'aapl'  class='form' onsubmit='console.log(this.id); return false;'>
+      			<div class = 'quantityInput'>
+				Quantity: 
+				<input name='quantity' type='number'/>
+      			</div>
+      			
+    			<div class = 'radio'>
+      			<input type='radio' name ='buyOrSell' value='1' checked/>
+      			<label for='buyOrSell'>BUY</label>
+      			<input type ='radio' name ='buyOrSell' value='2'/>
+      			<label for='buyOrSell'>SELL</label>
+      			</div>
+      			
+      			<div class = 'buttonWrapper'>
+      		 	<input type="submit" value="Submit" style = "width:60px">
+      		 	</div>
+      		</form>
+      	</div>
+      	
+      	</div>
+      	
+      	
+      	
+      	
+      	
+      	</div>
+      </div>
+    
+    <script src="scripts/login.js"></script>
+    <script async src="scripts/portfolio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/navBar.css" />
+    <link rel="stylesheet" href="css/favorites.css" />
+     <link rel="stylesheet" href="css/search.css" />
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="navConatainer">
+        <div class="logo">
+          <a
+            href="index.html"
+            style="
+              text-decoration: none;
+              text-emphasis: none;
+              color: rgb(245, 245, 245);
+            "
+            >SalStocks</a
+          >
+        </div>
+        <nav>
+          <ul id="barContent">
+            <li id="homeSearchList">
+              <a id="homeSearchLink" href="index.html">Home/Search</a>
+            </li>
+            <li
+              id="loginSignUpList"
+            >
+              <a id="logInSignUpLink" href="login.html">Login/Sign Up</a>
+            </li>
+                        <li id="favoritesList" style="display: none; border: 2px solid rgb(200, 200, 200);">
+              <a id="favoritesLink" href="#">Favorites</a>
+            </li>
+            <li id="portfolioList" style="display: none;">
+              <a id="portfolioLink" href="portfolio.html">Portfolio</a>
+            </li>
+            <li id="logOutList" style="display: none;">
+              <a id="logOutLink" href="javascript:logOut();">Log Out</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id = 'content' style = "padding-left: 20%; padding-right:20%; padding-top: 30px; padding-bottom:30px">
+	<h1>My Favorites</h1>
+	<div id = 'tableWrapper'>
+<table  id = "tableOfFavorites">
+<tbody id = 'tableBody'>
+<tr style = "display:none;">
+<td>
+<table id = "google" class = "company" onclick="tableClicked(this.id);">
+<tr>
+<th id = 'ticker' class = 'left'><h1>goog</h1></th>
+<th id = 'change' class = 'right'>
+<h1>2607</h1>
+<span class="spanSurrounder" style="position:relative;margin:0px;display:inline-block;">
+<button class = "buttons" name = 'goog'onclick="xButtonClicked(this.name);" style="position:absolute;top:-72px;right:-15px;"><i class="fas fa-times"></i></button>
+</span>
+</th>
+</tr>
+<tr>
+<th id = 'companyName' class = 'left'><h2>google</h2></th>
+<th id = 'percentage2' class = 'right'><h2>0.67%</h2></th>
+</tr>
+</table>
+</td>
+</tr>
+<tr style = "display: none">
+<td>
+<table id = "goog" class = "company" onclick="tableClicked(this.id);">
+<tr>
+<th id = 'ticker' class = 'left'><h1>goog</h1></th>
+<th id = 'change' class = 'right'>2607
+<span class="spanSurrounder" style="position:relative;margin:0px;display:inline-block;">
+<button class = "buttons" name = 'goog' onclick="xButtonClicked(this.name);" style="position:absolute;top:-35px;right:-12px;"><i class="fas fa-times"></i></button>
+</span>
+</th>
+</tr>
+<tr>
+<th id = 'companyName' class = 'left'><h2>google</h2></th>
+<th id = 'percentage2' class = 'right'>0.67%
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	      <div id="stockDisplayWrapper">
+        <!-- class name for each of the columns, main div wider -->
+        <div id="stockDisplay">
+          <div id="stockTable">
+            <table style = "column-gap: 100px; display:table; float:center; width:100%">
+              <tr>
+                <th id = "stockTicker" style="text-align: left;"><h1 id = "stockTickerh">WMG</h1></th>
+                <th id = "lastPrice" style="text-align: right; font-size: 150%">
+                  33.6
+                </th>
+              </tr>
+              <tr>
+                <th id = "companyName"style="text-align: left;">
+                  <h1 style="color: grey;" id = "companyNameh">Warner Music Group</h1>
+                </th>
+                <th id = "percentage"style="text-align: right; font-size: 100%">
+                  arrows and stuff
+                </th>
+              </tr>
+              <tr>
+                <th id = "stockExchange" style="text-align: left;">
+                  <p id = "stockExchangeh">NASDAQ</p>
+                </th>
+                <th id = "date"style="text-align: right; font-size: 100%; width:200px">
+                  date
+                </th>
+              </tr>
+              <tr>
+                <th style="text-align: left; width:50%" id = 'buyStuff'>
+                 Quantity 
+                 <form
+                    class="quantityForm"
+                    onsubmit="checkNegative(); executeBuy(null); return false;"
+                    style = "width:50%"
+                  >
+                   <input type="number" id="quantityh" style="width: 40px" required/>
+                    <div>
+                      <button
+                        style="background-color: green; color: white; padding: 5px 10px; border-radius: 5px; border-width: 0px;"
+                        class="buyButton"
+                      >
+                        Buy
+                      </button>
+                    </div>
+                  </form>
+                </th>
+                <th></th>
+              </tr>
+              <tr></tr>
+            </table>
+          </div>
+          <!-- maybe 1 table -->
+          <div id="isMarketOpen" style = "text-align:center"></div>
+          <div id="table of prices">
+              <div id="summary" style="text-align: center; color: grey;">Summary</div>
+              <hr style = "color: rgb(164, 153, 247)"></hr>
+            <table id = 'table' style = "text-align: left; display:flex; justify-content: center">
+              <tr>
+                <th>High Price:</th>
+                <th id= "highPriceTable"></th>
+                <th id = 't1'>Mid Price:</th>
+                <th id = 'dash'>-</th>
+                </tr>
+              <tr>
+                  <th>Low Price:</th>
+                  <th id= "lowPriceTable"></th>
+                  <th id = 't2'>Ask Price:</th>
+                  <th id="askPriceTable"></th>
+              </tr>
+              <tr>
+                  <th>Open Price:</th>
+                  <th id= "openPriceTable"></th>
+                  <th id = 't3'>Ask Size:</th>
+                  <th id="askSizeTable"></th>
+              </tr>
+              <tr>
+                  <th>Prev. Close:</th>
+                  <th id= "prevCloseTable"></th>
+                  <th id = 't4'>Bid Price:</th>
+                  <th id="bidPriceTable"></th>
+              </tr>
+              <tr>
+                  <th>Volume:</th>
+                  <th id= "volumeTable"></th>
+                  <th id = 't5'>Bid Size:</th>
+                  <th id="bidSizeTable"></th>
+              </tr>
+            </table>
+          </div>
+          </div>
+                  <div style = "display: flex; justify-content:center; flex-direction:column;">
+          <h2 style = "text-align: center">Company Description</h2>
+          <p id = "startDate" style = "padding-left:15%; padding-right:15%">Start Date: </p>
+          <p id = "companyDescription" style="text-align: left; padding-left:15%; padding-right:15%">company info here</p>
+      </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+  
+    <script src="scripts/login.js"></script>
+    <script async src="scripts/index.js"></script>
+    <script async src="scripts/favorites.js"></script>
+  </body>
+</html>

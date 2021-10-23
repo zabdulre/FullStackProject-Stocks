@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/navBar.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id" content="635096690334-jm439htspa4rq6vlc1gbivahe0dirtmc.apps.googleusercontent.com">
+  </head>
+
+  <body>
+    <header>
+      <div class="navConatainer">
+        <div class="logo">
+          <a
+            href="index.html"
+            style="
+              text-decoration: none;
+              text-emphasis: none;
+              color: rgb(245, 245, 245);
+            "
+            >SalStocks</a
+          >
+        </div>
+        <nav>
+          <ul id="barContent">
+            <li id="homeSearchList">
+              <a id="homeSearchLink" href="index.html">Home/Search</a>
+            </li>
+            <li
+              id="loginSignUpList"
+              style="border: 2px solid rgb(200, 200, 200);"
+            >
+              <a id="logInSignUpLink" href="#">Login/Sign Up</a>
+            </li>
+            <li id="portfolioList" style="display: none;">
+              <a id="portfolioLink" href="portfolio.html">Portfolio</a>
+            </li>
+            <li id="favoritesList" style="display: none;">
+              <a id="favoritesLink" href="favorites.html">Favorites</a>
+            </li>
+            <li id="logOutList" style="display: none;">
+              <a id="logOutLink" href="javascript:logOut();">Log Out</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="loginSignUpWrapper">
+      <div id="login">
+      <h1>Login</h1><br>
+      <h4 style = "display: none; color: #a12526" id = "loginError">Username and Password do not match</h4>
+      <form action="javascript:checkLogin()" id="loginForm">
+      <label for="username">Username</label><br>
+      	<input type = "text" id = "username" name="username" required><br>
+      <label for="password">Password</label><br>
+      	<input type = "password" id = "password" name="password" required><br>
+      <button id ="signInButton" type="submit"><i class="fa fa-door-open"></i> Sign In</button>
+      </form>
+       <HR style="width:20%; margin-left: 30%; background-color: grey; color: grey;border:none; height:1px"></HR>
+       <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      </div>
+      <div id="createAccount">
+      <h1>Sign Up</h1><br>
+      <h3 style = "color: #a12526" id = "createUserError"></h3>
+      <form action="javascript:createUser()">
+      <label for="email">Email</label><br>
+      	<input type = "email" id = "email" name="email" checked required><br>
+      <label for="user">Username</label><br>
+      	<input type = "text" id = "user" name="usernameInput" required><br>
+      <label for="passwordInput">Password</label><br>
+      	<input type = "password" id = "passwordInput1" name="passwordInput1" required><br>
+      <label for="passwordInput2">Confirm Password</label><br>
+      	<input type = "password" id = "passwordInput2" name="passwordInput2" required><br>
+      <input id = "terms" name="terms" type="radio" value="1" required></input>
+		<label for="terms">I have read and agree to all terms and conditions of SalStocks</label><br>
+      <button id ="signUpButton" type="submit"><i class="fa fa-user-plus"></i> Sign In</button>
+      </form>
+      <id = "createUserResponse"></id>
+      </div>
+    </div>
+    <script async src="scripts/login.js"></script>
+  </body>
+</html>

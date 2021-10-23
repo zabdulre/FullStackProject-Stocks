@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+#portfolioPage{
+padding: 20px 20%;
+}
+
+#cashBalanceHead{
+	padding-left:30px;
+}
+
+#accountValueHead{
+	padding-left:30px;
+	margin-bottom:50px;
+}
+
+body{
+	margin:0px;
+}
+
+.tickerStyle{
+	padding-left:10px;
+	display: inline-block;
+}
+
+.companyNameStyle{
+	display: inline-block;
+	margin-left: 10px;
+	color: rgba(100,100,120,0.5);
+}
+
+.company{
+	  box-shadow: 10px 10px 8px rgba(60,60,90,0.5);
+	background-color: rgba(220,220,235,0.5);
+	border: 1px solid grey;
+	margin-bottom: 20px;
+}
+
+.companyTableWrapper{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: white;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+
+.companyTableWrapper table{
+	table-layout: fixed;
+	border-collapse: separate;
+	border-spacing: 10px;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.companyTableWrapper th{
+	padding: 1px 10px;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float:right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 30%;
+	padding-right: 30%;
+	margin-bottom: 10px;
+	margin-top:20px;
+}
+
+.buttonWrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.formWrapper{
+	width:50%;
+	padding-left: 25%;
+}
+
+.radio{
+	display: flex;
+	justify-content: center;
+	grid-gap:10px;
+	margin-bottom: 15px;
+}
+
+.quantityInput{
+    display:grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.quantityInput input{
+	width: 30px;
+}

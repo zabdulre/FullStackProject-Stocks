@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+.navConatainer {
+  margin: 0px;
+}
+.logo {
+  font-weight: 900;
+  float: left;
+  color: rgb(245, 245, 245);
+  margin-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 125%;
+}
+nav {
+  margin-top: 0px;
+  margin-right: 12px;
+  padding-top: 7px;
+  float: right;
+}
+header {
+  background-color: rgb(80, 60, 240);
+}
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav ul {
+  margin: 0px;
+  list-style: none;
+}
+#barContent {
+  text-emphasis: none;
+}
+nav li {
+  cursor: default;
+  margin: 0px;
+  margin-left: 5px;
+  color: rgb(200, 200, 200);
+  display: inline-block;
+  font-size: 73%;
+  padding: 7px 5px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid rgb(80, 60, 240);
+}
+nav li:hover {
+  border: 2px solid rgb(200, 200, 200);
+}
+nav li a {
+  text-emphasis: none;
+  color: rgb(200, 200, 200);
+  text-decoration: none;
+}
+nav li button {
+  cursor: pointer;
+  font-size: 100%;
+  border: none;
+  background-color: rgb(80, 60, 240);
+  color: rgb(200, 200, 200);
+}
+nav li a:hover {
+  cursor: pointer;
+}
+
+#SalStocks {
+}
+

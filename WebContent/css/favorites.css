@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+#tableWrapper{
+	display: flex;
+	justify-content: left;
+}
+
+#tableOfFavorites{
+	width:100%;
+}
+
+
+
+.company{
+	margin:0px;
+	margin-bottom: 10px;
+	width:100%;
+	font-size: 70%;
+	border: 1px solid grey;
+	padding: 2px 8px;
+	pointer-events: default;
+}
+
+.companyNoClick{
+	margin:0px;
+	margin-bottom: 10px;
+	width:100%;
+	font-size: 70%;
+	border: 1px solid grey;
+	padding: 2px 8px;
+	pointer-events: none;
+}
+
+
+.left{
+	text-align:left;
+}
+
+
+
+.right{
+	text-align:right;
+}
+
+.spanSurrounder{
+	outline: none;
+	background-color: transparent;
+}
+
+.buttons{
+	border: 0px;
+	background-color: transparent;
+	outline: none;
+}
+
+#stockDisplayWrapper {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  justify-content:center;
+  width: 50%; /* Full width (cover the whole page) */
+  height: 65%; /* Full height (cover the whole page) */
+  left: 25%;
+  right: auto;
+  top: 10%;
+  bottom: 0px;
+  background-color: rgba(200, 200, 250, 0.9); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+ /* Add a pointer on hover */
+   box-shadow: 5px 10px #888888;
+}

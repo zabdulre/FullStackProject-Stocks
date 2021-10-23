@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+#loginSignUpWrapper{ 
+	color: grey;
+	padding: 0px 50px;
+	height:800px; margin:100px auto;
+	}
+
+#login{
+	width:50%; 
+	float:left; 
+	padding:20px 0px; 
+	margin:0px;
+	height:50%;
+	font-size: 100%;
+	}
+	
+#signInButton{
+	width:77%;
+	height: 40px;
+	font-size: 100%;
+	align-text: center;
+	color: white;
+	background-color: #a12526;
+	border:none;
+	border-radius:5px;
+	padding: 10px;
+	margin-bottom: 30px;
+}	
+
+#createAccount{
+	width:50%; 
+	float:right; 
+	padding:20px 0px; 
+	margin:0px;
+	height:50%;
+}
+
+#username{
+	width:75%;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius:5px;
+	margin-bottom: 35px;
+}
+
+#password{
+	width:75%;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius:5px;
+	margin-bottom: 35px;
+}
+
+#signUpButton{
+	width:77%;
+	height: 40px;
+	font-size: 100%;
+	align-text: center;
+	color: white;
+	background-color: #a12526;
+	border:none;
+	border-radius:5px;
+	padding: 10px;
+	margin-bottom: 40px;
+}	
+
+#email{
+	width:75%;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius:5px;
+	margin-bottom: 35px;
+}
+
+#user{
+	width:75%;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius:5px;
+	margin-bottom: 35px;
+}
+
+#passwordInput1{
+	width:75%;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius:5px;
+	margin-bottom: 35px;
+}
+
+#passwordInput2{
+	width:75%;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius:5px;
+	margin-bottom: 35px;
+}
+
